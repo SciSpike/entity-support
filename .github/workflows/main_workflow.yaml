@@ -1,6 +1,6 @@
 on:
   # Trigger analysis when pushing in master or pull requests, and when creating
-  # a pull request.
+  # a pull request. 
   push:
     branches:
       - master
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [ 12.0.0, 13.7.0, 14.0.0, 16.15.0 ]
+        node: [ 13.7.0, 14.0.0, 16.15.0 ]
     steps:
       - uses: actions/checkout@v2
         with:
