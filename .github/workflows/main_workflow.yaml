@@ -1,6 +1,6 @@
 on:
   # Trigger analysis when pushing in master or pull requests, and when creating
-  # a pull request. 
+  # a pull request.
   push:
     branches:
       - master
@@ -14,6 +14,7 @@ jobs:
     strategy:
       matrix:
         node: [ 13.7.0, 14.0.0, 16.15.0 ]
+        scope: [ '@northscaler', '@ballistagroup' ]
     steps:
       - uses: actions/checkout@v2
         with:
@@ -24,7 +25,7 @@ jobs:
           always-auth: true
           node-version: ${{ matrix.node }}
           registry-url: 'https://registry.npmjs.org'
-          scope: '@northscaler'
+          scope: ${{ matrix.scope }}
       - name: Cache node modules
         uses: actions/cache@v2
         env:
