@@ -3,8 +3,8 @@ name: Publish on Tag
 on:
   push:
     tags:
-      - '*dev*'
-      - '*qa*'
+      - '*pre*'
+      - '*rc*'
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
