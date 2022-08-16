@@ -1,11 +1,11 @@
 {
-  "name": "@northscaler/entity-support",
+  "name": "@ballistagroup/entity-support",
   "version": "0.4.0-pre.1",
   "description": "Support library for persistent domain entities",
-  "homepage": "https://gitlab.com/northscaler-public/entity-support",
+  "homepage": "https://github.com/ballistaGroup/entity-support",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/northscaler-public/entity-support"
+    "url": "https://github.com/ballistaGroup/entity-support"
   },
   "scripts": {
     "prebuild": "npm ci || npm install",
@@ -31,7 +31,8 @@
     "lint-staged": "git diff --name-only --cached | egrep '^src/.+.js$' | xargs standard --verbose",
     "format": "find src -name '*.js' | xargs standard --fix index.js",
     "format-staged": "git diff --name-only --cached | egrep '^src/.+.js$' | xargs standard --fix",
-    "make-distribution": "run-s transpile doc lic",
+    "make-distribution": "run-s transpile doc lic finalize-distribution",
+    "finalize-distribution": "copyfiles --verbose package.json package-lock.json README.md dist",
     "doc": "jsdoc --verbose -d docs -r -c jsdoc.json -R README.md src/main",
     "lic": "node lic.js > LICENSE",
     "pre-commit": "run-s lint-staged",
