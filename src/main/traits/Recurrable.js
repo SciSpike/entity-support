@@ -1,8 +1,8 @@
 'use strict'
 
-const { Trait } = require('@northscaler/mutrait')
+const { Trait } = require('@ballistagroup/mutrait')
 const property = require('@northscaler/property-decorator')
-const { IllegalArgumentError, IllegalStateError } = require('@northscaler/error-support')
+const { IllegalArgumentError, IllegalStateError } = require('@ballistagroup/error-support')
 
 const Recurrable = Trait(superclass =>
   class extends superclass {

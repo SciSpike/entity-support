@@ -1,6 +1,6 @@
 'use strict'
 
-const Enumeration = require('@northscaler/enum-support')
+const Enumeration = require('@ballistagroup/enum-support')
 
 const MILLISECOND = 1
 const SECOND = MILLISECOND * 1000

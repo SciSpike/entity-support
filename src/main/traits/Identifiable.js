@@ -3,8 +3,8 @@
 const _ = {
   isEqual: require('lodash.isequal')
 }
-const { Trait } = require('@northscaler/mutrait')
-const { MissingRequiredArgumentError } = require('@northscaler/error-support')
+const { Trait } = require('@ballistagroup/mutrait')
+const { MissingRequiredArgumentError } = require('@ballistagroup/error-support')
 const property = require('@northscaler/property-decorator')
 
 /**

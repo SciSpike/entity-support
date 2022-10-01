@@ -6,12 +6,12 @@ chai.use(require('dirty-chai'))
 const expect = chai.expect
 
 const uuid = require('uuid').v4
-const { traits } = require('@northscaler/mutrait')
+const { traits } = require('@ballistagroup/mutrait')
 const { Treeness } = require('../../../main/traits')
 const {
   IllegalArgumentError,
   MissingRequiredArgumentError
-} = require('@northscaler/error-support')
+} = require('@ballistagroup/error-support')
 const { TreeCircularityError } = require('../../../main/errors')
 
 describe('unit tests of Treeness', () => {

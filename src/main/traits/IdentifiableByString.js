@@ -1,5 +1,5 @@
 const Identifiable = require('./Identifiable')
-const { Trait, superclass } = require('@northscaler/mutrait')
+const { Trait, superclass } = require('@ballistagroup/mutrait')
 
 /**
  * Imparts an `id` property with backing property `_id` that is an unsigned integer.

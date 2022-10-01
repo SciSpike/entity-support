@@ -5,8 +5,8 @@ const chai = require('chai')
 chai.use(require('dirty-chai'))
 const expect = chai.expect
 
-const { trait } = require('@northscaler/mutrait')
-const { IllegalArgumentError } = require('@northscaler/error-support')
+const { trait } = require('@ballistagroup/mutrait')
+const { IllegalArgumentError } = require('@ballistagroup/error-support')
 const SemanticallyVersionable = require('../../../main/traits/SemanticallyVersionable')
 
 describe('unit tests of SemanticallyVersionable', () => {

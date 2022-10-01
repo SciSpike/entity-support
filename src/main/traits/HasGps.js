@@ -1,8 +1,8 @@
 'use strict'
 
-const { Trait } = require('@northscaler/mutrait')
+const { Trait } = require('@ballistagroup/mutrait')
 const property = require('@northscaler/property-decorator')
-const { IllegalArgumentError } = require('@northscaler/error-support')
+const { IllegalArgumentError } = require('@ballistagroup/error-support')
 const { Gps } = require('../entities/Location')
 
 /**

@@ -1,7 +1,7 @@
 'use strict'
 
 const property = require('@northscaler/property-decorator')
-const { IllegalArgumentError, MissingRequiredArgumentError, MethodNotImplementedError } = require('@northscaler/error-support')
+const { IllegalArgumentError, MissingRequiredArgumentError, MethodNotImplementedError } = require('@ballistagroup/error-support')
 const CardinalDirection = require('../enums/CardinalDirection')
 
 class Parallel {

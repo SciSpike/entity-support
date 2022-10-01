@@ -5,11 +5,11 @@ const chai = require('chai')
 chai.use(require('dirty-chai'))
 const expect = chai.expect
 
-const { trait } = require('@northscaler/mutrait')
+const { trait } = require('@ballistagroup/mutrait')
 const {
   MissingRequiredArgumentError,
   IllegalArgumentError
-} = require('@northscaler/error-support')
+} = require('@ballistagroup/error-support')
 
 const IdentifiableByString = require('../../../main/traits/IdentifiableByString')
 

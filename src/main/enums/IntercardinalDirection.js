@@ -1,6 +1,6 @@
 'use strict'
 
-const Enumeration = require('@northscaler/enum-support')
+const Enumeration = require('@ballistagroup/enum-support')
 
 const IntercardinalDirection = Enumeration.new({
   name: 'IntercardinalDirection',

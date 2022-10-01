@@ -1,7 +1,7 @@
 'use strict'
 
-const { Trait } = require('@northscaler/mutrait')
-const { IllegalArgumentError, MissingRequiredArgumentError } = require('@northscaler/error-support')
+const { Trait } = require('@ballistagroup/mutrait')
+const { IllegalArgumentError, MissingRequiredArgumentError } = require('@ballistagroup/error-support')
 const { TreeCircularityError } = require('../errors')
 
 const identity = (that, other) => that === other

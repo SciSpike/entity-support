@@ -1,6 +1,6 @@
 const Identifiable = require('./Identifiable')
-const { Trait, superclass } = require('@northscaler/mutrait')
-const { IllegalArgumentError } = require('@northscaler/error-support')
+const { Trait, superclass } = require('@ballistagroup/mutrait')
+const { IllegalArgumentError } = require('@ballistagroup/error-support')
 
 /**
  * Imparts an `id` property with backing property `_id` that is an unsigned integer.

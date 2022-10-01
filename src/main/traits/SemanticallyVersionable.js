@@ -1,7 +1,7 @@
-const { Trait } = require('@northscaler/mutrait')
+const { Trait } = require('@ballistagroup/mutrait')
 const property = require('@northscaler/property-decorator')
 const semver = require('semver')
-const { IllegalArgumentError } = require('@northscaler/error-support')
+const { IllegalArgumentError } = require('@ballistagroup/error-support')
 
 /**
  * Imparts a `semver` property with backing property `_semver`.
