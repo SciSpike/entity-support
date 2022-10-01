@@ -5,10 +5,10 @@ const chai = require('chai')
 chai.use(require('dirty-chai'))
 const expect = chai.expect
 
-const { trait } = require('@northscaler/mutrait')
+const { trait } = require('@ballistagroup/mutrait')
 const { HasGps } = require('../../../main/traits')
 const { Gps } = require('../../../main/entities/Location')
-const { IllegalArgumentError } = require('@northscaler/error-support')
+const { IllegalArgumentError } = require('@ballistagroup/error-support')
 
 describe('unit tests of HasGps', () => {
   it('should work', () => {

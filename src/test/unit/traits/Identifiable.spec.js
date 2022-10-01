@@ -7,8 +7,8 @@ const expect = chai.expect
 
 const uuid = require('uuid').v4
 
-const { trait } = require('@northscaler/mutrait')
-const { MissingRequiredArgumentError } = require('@northscaler/error-support')
+const { trait } = require('@ballistagroup/mutrait')
+const { MissingRequiredArgumentError } = require('@ballistagroup/error-support')
 
 const Identifiable = require('../../../main/traits/Identifiable')
 

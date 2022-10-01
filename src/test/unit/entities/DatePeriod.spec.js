@@ -8,7 +8,7 @@ chai.use(require('dirty-chai'))
 const expect = chai.expect
 
 const DatePeriod = require('../../../main/entities/DatePeriod')
-const { IllegalArgumentError } = require('@northscaler/error-support')
+const { IllegalArgumentError } = require('@ballistagroup/error-support')
 
 describe('unit tests of DatePeriod', function () {
   it('should disallow invalid states', () => {

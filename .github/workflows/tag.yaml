@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         node: [ 13.7.0, 14.0.0, 16.15.0 ]
-        scope: [ '@northscaler', '@ballistagroup' ]
+        scope: [ '@ballistagroup' ]
     steps:
       - uses: actions/checkout@v2
         with:
@@ -42,6 +42,5 @@ jobs:
       - run: npm run make-distribution
       - run: npm prune --production
       - run: npm publish
-        working-directory: ./dist
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}

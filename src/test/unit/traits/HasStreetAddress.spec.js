@@ -5,10 +5,10 @@ const chai = require('chai')
 chai.use(require('dirty-chai'))
 const expect = chai.expect
 
-const { trait } = require('@northscaler/mutrait')
+const { trait } = require('@ballistagroup/mutrait')
 const { HasStreetAddress } = require('../../../main/traits')
 const { UsStreetAddress } = require('../../../main/entities/Location')
-const { IllegalArgumentError } = require('@northscaler/error-support')
+const { IllegalArgumentError } = require('@ballistagroup/error-support')
 
 describe('unit tests of Locatable', () => {
   it('should work', () => {
